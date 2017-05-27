@@ -4,3 +4,9 @@
 *.iml
 .idea
 target
+*.log
+web/logs/*
+run-logs/*
+web/run-logs/*
+web/*.iml
+biz/*.iml

@@ -161,6 +161,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.virjar</groupId>
+                <artifactId>dungproxy-client</artifactId>
+                <version>0.0.6</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.3.2</version>
@@ -176,6 +182,13 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.20</version>
+            </dependency>
+
+            <!--微信相关-->
+            <dependency>
+                <groupId>com.foxinmy</groupId>
+                <artifactId>weixin4j-mp</artifactId>
+                <version>1.7.5</version>
             </dependency>
         </dependencies>
 

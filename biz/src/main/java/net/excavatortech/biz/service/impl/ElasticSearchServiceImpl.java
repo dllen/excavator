@@ -37,7 +37,6 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
      * es type
      */
     private String type;
-
     private String host;
     private Integer port;
     private String clusterName;
@@ -57,7 +56,6 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             }
         }
         Preconditions.checkNotNull(client, "create elasticsearch client failed");
-
     }
 
     @PreDestroy

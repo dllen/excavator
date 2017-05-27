@@ -30,11 +30,8 @@ public class SpiderServiceImpl implements SpiderService {
 
     @Override
     public void crawl(String url) {
-
         final String startUrl = url;
-
         AsyncUtil.execute(new Runnable() {
-
             @Override
             public void run() {
                 Spider.create(pageProcessor)
@@ -48,12 +45,9 @@ public class SpiderServiceImpl implements SpiderService {
                         .thread(5)
                         // 启动爬虫
                         .run();
-
                 logger.info("spider run success!");
             }
         });
-
         logger.info("spider start!");
-
     }
 }
