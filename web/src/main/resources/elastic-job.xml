@@ -16,7 +16,7 @@
     <context:property-placeholder
             location="classpath:/elastic.job.properties" ignore-unresolvable="true"/>
 
-    <context:component-scan base-package="com.jd.job"/>
+    <context:component-scan base-package="net.excavatortech"/>
 
     <!--配置作业注册中心 -->
     <reg:zookeeper id="regCenter" server-lists="${zookeeper.server.lists}" namespace="${zookeeper.namespace}"
@@ -25,7 +25,7 @@
                    max-retries="${zookeeper.max.retries}"/>
 
     <!-- 配置作业-->
-    <job:simple id="SpiderElasticJob" class="com.jd.job.SpiderElasticJob"
+    <job:simple id="SpiderElasticJob" class="net.excavatortech.job.SpiderElasticJob"
                 registry-center-ref="regCenter" cron="${job.cron}"
                 sharding-total-count="${job.shardingTotalCount}"
                 sharding-item-parameters="${job.shardingItemParameters}"
